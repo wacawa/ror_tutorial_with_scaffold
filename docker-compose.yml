@@ -10,3 +10,4 @@ services:
       - .:/webapp
     ports:
       - 4000:4000
+    stdin_open: true
