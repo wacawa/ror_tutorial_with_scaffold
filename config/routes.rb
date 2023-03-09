@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root "application#goodbye"
+  root "users#index"
   resources :users
 end
