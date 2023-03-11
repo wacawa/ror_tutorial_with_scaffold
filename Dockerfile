@@ -8,3 +8,4 @@ RUN gem update --system \
   && bundle _2.3.14_ install \
   && bundle _2.3.14_ lock --add-platform x86_64-linux
 COPY . /webapp
+CMD bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 4000 -b '0.0.0.0'"
